@@ -12,44 +12,86 @@ const Skills = () => {
         <Container className="text-center my-5 section section-lg">
           <h1 className="h1">{skillsSection.title}</h1>
           <p className="lead">{skillsSection.subTitle}</p>
-          {skillsSection.data.map((section, index) => {
-            return (
-              <Row className="my-5" key={index}>
-                <Col lg="6" className="order-2 order-lg-1">
-                  <DisplayLottie animationPath={section.lottieAnimationFile} />
-                </Col>
-                <Col lg="6" className="order-1 order-lg-2">
-                  <h3 className="h3 mb-2">{section.title}</h3>
-                  <div className="d-flex justify-content-center flex-wrap mb-2">
-                    {section.softwareSkills.map((skill, i) => {
-                      return (
-                        <Fragment key={i}>
+          {skillsSection.data.map((section, index) => (
+            <Row className="my-5" key={index}>
+              {/* Animation Section - Smaller and Left-Aligned */}
+              <Col lg="6" className="mb-4">
+                <div className="d-flex justify-content-center">
+                  <DisplayLottie
+                    animationPath={section.lottieAnimationFile}
+                    style={{ width: '100%', height: '100%' }}
+                  />
+                </div>
+                {section.softwareSkills.slice(4).map((softwareSkill, i) => (
+                  <div key={i} className="mb-4">
+                    <h3 className="h3 mb-2">{softwareSkill.sectionName}</h3>
+                    <div className="d-flex justify-content-center flex-wrap mb-2">
+                      {softwareSkill.skills.map((skill, j) => (
+                        <Fragment key={j}>
                           <div
                             className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
                             id={skill.skillName.replace(/\s/g, "")}
                           >
-                            <Icon icon={skill.iconifyTag} data-inline="false"></Icon>
+                            <Icon icon={skill.iconifyTag} data-inline="false" />
                           </div>
-                          <UncontrolledTooltip delay={0} placement="bottom" target={skill.skillName.replace(/\s/g, "")}>
+                          <UncontrolledTooltip
+                            delay={0}
+                            placement="bottom"
+                            target={skill.skillName.replace(/\s/g, "")}
+                          >
                             {skill.skillName}
                           </UncontrolledTooltip>
                         </Fragment>
-                      );
-                    })}
+                      ))}
+                    </div>
                   </div>
-                  <div>
-                    {section.skills.map((skill, i) => {
-                      return <p key={i}>{skill}</p>;
-                    })}
+                ))}
+              </Col>
+
+              {/* Skills Section - Right Side (First Three Sections) */}
+              <Col lg="6" className="mb-4">
+                {section.softwareSkills.slice(0, 4).map((softwareSkill, i) => (
+                  <div key={i} className="mb-4">
+                    <h3 className="h3 mb-2">{softwareSkill.sectionName}</h3>
+                    <div className="d-flex justify-content-center flex-wrap mb-2">
+                      {softwareSkill.skills.map((skill, j) => (
+                        <Fragment key={j}>
+                          <div
+                            className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
+                            id={skill.skillName.replace(/\s/g, "")}
+                          >
+                            <Icon icon={skill.iconifyTag} data-inline="false" />
+                          </div>
+                          <UncontrolledTooltip
+                            delay={0}
+                            placement="bottom"
+                            target={skill.skillName.replace(/\s/g, "")}
+                          >
+                            {skill.skillName}
+                          </UncontrolledTooltip>
+                        </Fragment>
+                      ))}
+                    </div>
                   </div>
-                </Col>
-              </Row>
-            );
-          })}
+                ))}
+              </Col>
+
+              {/* Skills Section Directly Under Animation (Last Two Sections) */}
+              
+            </Row>
+          ))}
         </Container>
       </Fade>
     )
   );
 };
+
+
+
+
+
+
+
+
 
 export default Skills;

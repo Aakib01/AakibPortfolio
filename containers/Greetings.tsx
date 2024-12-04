@@ -38,6 +38,7 @@ const Greetings = () => {
                         className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                         color="default"
                         href={greetings.resumeLink}
+                        target="_blank"
                       >
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-file" />
@@ -48,7 +49,7 @@ const Greetings = () => {
                   )}
                 </Col>
                 <Col lg="6">
-                  <GreetingLottie animationPath="/lottie/coding.json" />
+                  <GreetingLottie animationPath="/lottie/coding-3.json" />
                 </Col>
               </Row>
             </div>

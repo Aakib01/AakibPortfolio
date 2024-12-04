@@ -87,6 +87,19 @@ const SocialLinks = () => {
           <span className="btn-inner--icon">
             <i className="fa fa-twitter" />
           </span>
+        </Button>        
+      )}
+      {socialLinks.phone && (
+        <Button
+          className="btn-icon-only rounded-circle ml-1"
+          color="white"
+          href={`tel:${socialLinks.phone}`} 
+          rel="noopener"
+          aria-label="Phone"
+        >
+          <span className="btn-inner--icon">
+            <i className="fa fa-phone" />
+          </span>
         </Button>
       )}
     </div>

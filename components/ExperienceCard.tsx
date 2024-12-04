@@ -30,7 +30,7 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
           <CardSubtitle tag="h5" className="mb-2">
             {role}
           </CardSubtitle>
-          <CardSubtitle>{date}</CardSubtitle>
+          <CardSubtitle >{date}</CardSubtitle>
           <CardText tag="div" className="description my-3 text-left">
             {desc}
             <ul>

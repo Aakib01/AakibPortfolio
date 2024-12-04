@@ -20,7 +20,7 @@ const Projects = () => {
                 <h4 className="display-3 text-info">Projects</h4>
               </div>
             </div>
-            <Row className="row-grid align-items-center">
+            <Row className="g-3">
               {projects.map((data, i) => {
                 return <ProjectsCard key={i} {...data} />;
               })}

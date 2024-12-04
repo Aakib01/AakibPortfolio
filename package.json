@@ -7,9 +7,9 @@
   "author": "Hanzla Tauqeer",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & open http://localhost:3000",
     "build": "next build",
-    "start": "next start",
+    "start": "next start --open",
     "lint": "eslint *.{js,jsx,ts,tsx}",
     "lint:fix": "eslint *.{js,jsx,ts,tsx} --fix",
     "prettier": "prettier --check .",

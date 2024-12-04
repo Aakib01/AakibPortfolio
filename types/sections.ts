@@ -33,7 +33,12 @@ type SkillType = {
   title: string;
   lottieAnimationFile: string;
   skills: React.ReactNode[] | string[];
-  softwareSkills: SoftwareSkillType[];
+  softwareSkills: SkillSection[];
+};
+
+type SkillSection = {
+     sectionName : string;
+     skills : SoftwareSkillType[];
 };
 
 export type SkillsSectionType = {
@@ -56,7 +61,7 @@ export type EducationType = {
   subHeader: string;
   duration: string;
   desc: string;
-  grade?: string;
+  CGPA?: string;
   descBullets?: string[];
 };
 
@@ -78,6 +83,13 @@ export type ProjectType = {
   desc: string;
   github?: string;
   link?: string;
+};
+// * CERTIFICATIONS SECTION
+
+export type CertificationType = {
+  certificationName: string;
+  organization: string;
+  year: string;
 };
 
 // * FEEDBACK SECTION

@@ -9,38 +9,43 @@ import {
   SEODataType,
   SocialLinksType,
   GreetingsType,
+  CertificationType,
 } from "./types/sections";
+import Skills from "./containers/Skills";
 
 export const greetings: GreetingsType = {
-  name: "Hanzla Tauqeer",
-  title: "Hi all, I'm Hanzla",
+  name: "Mohamed Aakibali A M",
+  title: "Hi all, I'm Aakib",
   description:
-    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
-  resumeLink: "#",
+    `Driven by a desire to impact lives through technology, result-oriented Senior Software Engineer skilled in designing and
+optimizing scalable applications. Excels in full-stack development, integration, and technical documentation. Passionate
+about innovation and contributing to impactful solutions in dynamic environments.`,
+  resumeLink: "/Mohamed_Aakibali_s_CV.pdf",
 };
 
 export const openSource = {
-  githubUserName: "1hanzla100",
+  githubUserName: "Aakib01",
 };
 
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "mailto:hanzla.tauqeer123@gmail.com",
-  linkedin: "https://www.linkedin.com/in/1hanzla100/",
-  github: "https://github.com/1hanzla100",
-  instagram: "https://www.instagram.com/__hanzla100",
+  email: "mailto:mohamedaakibali@gmail.com",
+  linkedin: "https://www.linkedin.com/in/mohamed-aakibali/",
+  github: "https://github.com/Aakib01",
+  phone:"7871239245"
+  //instagram: "https://www.instagram.com/__hanzla100",
   // facebook: 'https://www.facebook.com/1hanzla100',
   // twitter: 'https://twitter.com/1hanzla100',
 };
 
 export const skillsSection: SkillsSectionType = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY SOFTWARE ENGINEER WHO WANTS TO EXPLORE EVERY TECH STACK",
   data: [
     {
-      title: "Full Stack Development",
-      lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
+      title: "Software Engineer",
+      lottieAnimationFile: "/lottie/coding-1.json", // Path of Lottie Animation JSON File
       skills: [
         emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
         emoji("⚡ Building responsive static websites using Next.js"),
@@ -48,45 +53,157 @@ export const skillsSection: SkillsSectionType = {
       ],
       softwareSkills: [
         {
-          skillName: "Python",
-          iconifyTag: "logos:python",
+          sectionName: "Programming Language",
+          skills: [
+            {
+              skillName: "CSharp",
+              iconifyTag: "devicon:csharp",
+            },            
+            {
+              skillName: "React JS",
+              iconifyTag: "logos:react",
+            },         
+            {
+              skillName: "HTML",
+              iconifyTag: "vscode-icons:file-type-html",
+            },
+            {
+              skillName: "CSS",
+              iconifyTag: "vscode-icons:file-type-css",
+            },
+            {
+              skillName: "JavaScript",
+              iconifyTag: "logos:javascript",
+            },
+            {
+              skillName: "SQL",
+              iconifyTag: "vscode-icons:file-type-sql",
+            },
+            
+            {
+              skillName: "Java",
+              iconifyTag: "logos:java",
+            },
+            {
+              skillName: "Python",
+              iconifyTag: "logos:python",
+            },
+            {
+              skillName: "CPP",
+              iconifyTag: "vscode-icons:file-type-cpp3",
+            },
+            {
+              skillName: "C",
+              iconifyTag: "logos:c",
+            }
+            
+            
+            
+          ]          
         },
         {
-          skillName: "Django",
-          iconifyTag: "vscode-icons:file-type-django",
+          sectionName : "Framework",
+          skills : [
+            {
+              skillName: "Dot NET Core",
+              iconifyTag: "devicon:dotnetcore",
+            },
+            {
+              skillName: "ASP DOT NET",
+              iconifyTag: "mdi:dot-net",
+            },
+            {
+              skillName: "Jest",
+              iconifyTag: "logos:jest",
+            },
+            {
+              skillName: "MVC",
+              iconifyTag: "mdi:layers-outline",
+            },
+          ]
         },
         {
-          skillName: "JavaScript",
-          iconifyTag: "logos:javascript",
+          sectionName : "Database & API Technologies",
+          skills : [
+            {
+              skillName: "Oracle DB",
+              iconifyTag: "logos:oracle",
+            },
+            {
+              skillName: "RESTful APIs",
+              iconifyTag: "mdi:api",
+            },
+            {
+              skillName: "Entity Framework",
+              iconifyTag: "material-symbols:identity-aware-proxy",
+            }           
+          ]
         },
         {
-          skillName: "Reactjs",
-          iconifyTag: "vscode-icons:file-type-reactjs",
+          sectionName : "Tools & Platforms",
+          skills : [
+            {
+              skillName: "AWS",
+              iconifyTag: "logos:aws",
+            },
+            {
+              skillName: "Jira",
+              iconifyTag: "logos:jira",
+            },
+            {
+              skillName: "Bitbucket",
+              iconifyTag: "logos:bitbucket",
+            },
+            {
+              skillName: "TeamCity",
+              iconifyTag: "simple-icons:teamcity",
+            },
+            {
+              skillName: "Linux",
+              iconifyTag: "logos:linux-tux",
+            }
+            
+          ]
         },
         {
-          skillName: "Nextjs",
-          iconifyTag: "vscode-icons:file-type-light-next",
+          sectionName : "Development Tools & Practices",
+          skills : [
+            {
+              skillName: "Agile Methodology",
+              iconifyTag: "iconoir:agile",
+            },
+            {
+              skillName: "OOPs",
+              iconifyTag: "mdi:code-tags",
+            },
+            {
+              skillName: "Data Structures",
+              iconifyTag: "mdi:database-outline",
+            },
+            {
+              skillName: "Algorithm",
+              iconifyTag: "mdi:chart-timeline-variant",
+            },
+            {
+              skillName: "Product Development",
+              iconifyTag: "mdi:cube-outline",
+            },
+            {
+              skillName: "SOLID Principles",
+              iconifyTag: "mdi:format-list-checks",
+            }
+            
+          ]
         },
-        {
-          skillName: "AWS",
-          iconifyTag: "logos:aws",
-        },
-        {
-          skillName: "Heroku",
-          iconifyTag: "logos:heroku-icon",
-        },
-        {
-          skillName: "Github",
-          iconifyTag: "akar-icons:github-fill",
-        },
-        {
-          skillName: "Docker",
-          iconifyTag: "logos:docker-icon",
-        },
+        
+        
+        
       ],
     },
-  ],
+  ]
 };
+  
+
 
 export const SkillBars: SkillBarsType[] = [
   {
@@ -105,109 +222,164 @@ export const SkillBars: SkillBarsType[] = [
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: "University of Central Punjab",
-    subHeader: "Bachelor of Science in Computer Science",
-    duration: "September 2017 - April 2020",
+    schoolName: "Bannari Amman Institute of Technology",
+    subHeader: "Bachelor of Technology in Information Technology",
+    duration: "August 2017 - May 2021",
     desc: "",
-    grade: "Grade A",
+    CGPA: "Cgpa - 8.31",
+    descBullets: [], // Array of Strings
+  },
+  {
+    schoolName: "P A Vidhya Bhavan Hr Sec School",
+    subHeader: "Class 12th",
+    duration: "June 2017",
+    desc: "",
+    CGPA: "Grade - 86.6%",
     descBullets: [], // Array of Strings
   },
 ];
 
 export const experience: ExperienceType[] = [
   {
-    role: "Django Developer",
-    company: "Meganos Software",
-    companyLogo: "/img/icons/common/meganos.png",
-    date: "Aug 2022 - Present",
-    desc: "I crafted backends for diverse web apps, APIs, and WebSockets in e-commerce, podcasts, and property management. Managed server upkeep, deployments on Linux, Heroku, and AWS S3. Implemented PyTest for automated unit and integration testing, slashing 4 hours of manual testing each sprint, fortifying a dependable and flawless code foundation.",
+    role: "Senior Software Engineer",
+    company: "Gavs Technology",
+    companyLogo: "/img/icons/common/gavs.jpeg",
+    date: "April 2022 - Present  |  Chennai, India",
+    desc: "",
+    descBullets: [
+       	"Developed new features and resolved bugs for a scalable EMS healthcare product, achieving a 600+ user base across the US using Fullstack development practices",
+       	"Improved API performance by 40% through migrating WCF services to RESTful APIs,leveraging microservice architecture.",
+        "Implemented OKTA for authentication, providing secure, centralized access management across various sites and applications.",
+        "Conducted peer code reviews, providing constructive feedback to maintain high-quality code standards and improve team collaboration.",
+        "Implemented TDD with unit and integration tests, enhancing code reliability, test coverage, and reducing bugs, while documenting 40+ bugs to improve product quality.",
+        "Collaborated cross-functionally with QA and Product Owners, ensuring timely delivery and adhering to Agile methodologies."
+       ],
+
   },
   {
-    role: "Full Stack Developer",
-    company: "Duseca Software",
-    companyLogo: "/img/icons/common/duseca_software_logo.jpeg",
-    date: "Jan 2022 - Sept 2023",
-    desc: "Crafted robust mobile application backends employing Django, Python, and REST APIs. Leveraged Django REST Framework, PostgreSQL, AWS, Firebase, Stripe, and WebSocket for efficient development. Collaborated across teams to surpass client expectations. Designed intuitive UIs, empowering clients to effortlessly manage their applications with a visually captivating interface.",
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
+    role: "Software Engineeer Intern",
+    company: "HTIC IIT Madras",
+    companyLogo: "/img/icons/common/IIT_Madras_Logo.png",
+    date: "Jan 2022 - Sept 2023  |  Chennai, India",
+    desc: "",
+    descBullets: [
+     	"Contributed to a spine surgery robot product in the medical domain.",
+     	"Developed Java-based middleware to enhance surgical precision by seamlessly connecting the UR Robot and Surgical Planning Software.",
+      "Achieved a 30% improvement in project efficiency through task prioritization, data handling, and watchdog monitoring.",
+      "Enabled seamless data communication by implementing JSON format transmission through TCP/IP protocol with the software.",
+      "Produced technical documentation to support ongoing project improvements and ensure continuity for future development."
+     ],
   },
   {
-    role: "Full Stack Developer",
-    company: "ZRTechnologies",
-    companyLogo: "/img/icons/common/zrtech.jpeg",
-    date: "Aug 2022 - Jun 2023",
-    desc: "Crafting diverse web applications, I've elevated functionality and user engagement. Spearheaded Visual Portfolio, leveraging AI for captivating presentations from parsed text. Proficiently set up and optimized applications on Linux servers, guaranteeing smooth scalability and top-notch performance for seamless user experiences.",
+    role: "Social Media Intern",
+    company: "Edvizo Media Private Limited",
+    companyLogo: "/img/icons/common/edvizo_logo.jpeg",
+    date: "Feb 2020 - Apr 2020 | Remote",
+    desc: "",
+    descBullets :[
+      "Created and shared educational content tailored to students, increasing engagement and promoting platform features.",
+      "Analyzed user behavior on social media to refine strategies and attract more learners to the platform."
+    ]
   },
   {
-    role: "Backend Developer",
-    company: "Bleed-AI",
-    companyLogo: "/img/icons/common/bleedAI.jpg",
-    date: "Sept 2021 - Oct 2021",
-    desc: "As a Django developer at Bleed AI, I integrated a computer vision AI model to process YouTube URLs on a website. I used Django Channels and Websockets to show real-time processing and implemented threading to run multiple instances of the AI model. I also used jQuery for UI rendering and deployed the website on a Heroku server.",
+    role: "Internet of Things Intern",
+    company: "Altsense",
+    companyLogo: "/img/icons/common/altsense_logo.jpeg",
+    date: "Sept 2021 - Oct 2021  |  Chennai, India",
+    desc: "",
+    descBullets : [
+      "Developed and tested IoT prototypes to integrate sensors and devices for real-time data monitoring.",
+      "Collaborated on building IoT-based solutions, improving connectivity and automation for smart systems."
+    ]
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: "developer-portfolio",
-    desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-    github: "https://github.com/1hanzla100/developer-portfolio",
-    link: "https://developer-portfolio-1hanzla100.vercel.app/",
+    name: "React Js - SIP Invesment Calculator",
+    desc: "This site can be used to calculate the SIP to know about your money growth with expected return percentage and duration of the investment",
+    github: "https://github.com/Aakib01/Investment-Calculator",
+    link: "https://aakib01.github.io/Investment-Calculator/",
   },
   {
-    name: "Giebo",
-    desc: "A Podcast Platform where creators can easily publish and sell their podcasts, and users can purchase with Handcash BitcoinSV, the future of fast and secure transactions.",
-    link: "https://gibeo.io/",
+    name: "Computer Vision - Covid Restriction in Malls",
+    desc: "The Automation System will count the number of people entering and exiting the mall using SSD Algorithm(Object Detection) and Centroid Tracking (Object Tracking) to help to maintain 50% occupancy all the time to ensure COVID-19 Restriction. This benefits management to reduce their expenses and consumers to save their time.",
+    link: "",
   },
   {
-    name: "O Mejor Oferta",
-    desc: "O Mejor Oferta is a mobile marketplace for buying and selling items nearby, helping users find deals on things they want and make money from items they no longer need.",
-    link: "https://play.google.com/store/apps/details?id=com.duseca.mejor_oferta",
+    name: "IOT - Smart Farming",
+    desc: "We programmed ATmega328P Microcontroller to acquire humidity and temperature level data and use dc motors that help to protect plants from exposing high sunlight and low humidity. So, we can save plants from dying and yield more quality crops.",
+    link: "",
+  }
+  
+];
+export const certificationsInfo : CertificationType[] = [
+  {
+    certificationName: "AWS Certified Cloud Practitioner",
+    organization: "Amazon Web Services",
+    year: "2023 - 2026",
+    
   },
   {
-    name: "Hooligan Culture",
-    desc: "A Ecommerce Platform, where shopping meets the future! With HandCash BitcoinSV integration, you can authenticate and purchase products with ease and confidence.",
-    link: "https://hooliganculture.com/",
+    certificationName: "ChatGPT Prompt Engineering for Developers",
+    organization: "DeepLearning.AI",
+    year: "2024",    
   },
+  {
+    certificationName: "Gen AI for Everyone",
+    organization: "Coursera",
+    year: "2023",    
+  },
+  {
+    certificationName: "Python for Data Science",
+    organization: "IBM",
+    year: "2021",    
+  },
+  {
+    certificationName: "BEC Preliminary",
+    organization: "University of Cambridge",
+    year: "2019",    
+  },
+  
+  
+
 ];
 
 export const feedbacks: FeedbackType[] = [
   {
-    name: "Syed Jamal",
-    role: "Frontend Developer at Meganos Software",
+    name: "Bala Rajesh",
+    role: "Associate Director at Gavs Technology",
     feedback:
-      "You were a wonderful addition to our team, alhumdulillah. I'm quite impressed with your abilities and professional practices. You approach problems from a unique perspective and always ask the right question. Finding a good teammate like Hanzla is extremely difficult. He has contributed to the growth of our organization and continues to do so. May Allah bless you with everything you desire.",
+      "I’ve had the pleasure of working with Mohamad, and I can confidently say that he is a highly skilled and talented developer. He has an impressive ability to quickly learn and master new technologies, always staying on top of the latest trends. Mohamad is also a true team player—collaborative, dependable, and always willing to lend a hand when needed. His contributions make him an invaluable asset to any team. I have no doubt that he will continue to achieve great things, and I wish him all the best in his future endeavors.",
   },
   {
-    name: "Wajahat Malek",
-    role: "CEO at Duseca Software",
+    name: "Rucha Gholap",
+    role: "Senior Software Engineer at Gavs Technology",
     feedback:
-      "Hanzla has a deep understanding of web development technologies and is adept at using them to build scalable, robust, and secure web applications. He has worked on various projects, ranging from small-scale to large-scale, and has shown his ability to work collaboratively with others while maintaining a high level of productivity and quality. Hanzla is a pleasure to work with, and I have no doubt that he will be an asset to any team or organization. I highly recommend Hanzla for any Full Stack Django, React.js, or Blockchain development projects, and I wish him all the best in his future endeavors.",
+      "He is good team player, confident and a quick learner. He has strong and in depth knowledge on the technologies we worked upon.",
   },
   {
-    name: "Zaid Zaffar",
-    role: "CEO at ZR Technologies",
+    name: "Atsuko T",
+    role: "Software Engineer at at ZOLL Data",
     feedback:
-      "Very skilled at what he does and has an in depth knowledge of Django and he's always ready to handle any challenges thrown at him. He's been a valuable member of my team and i look forward to working with him in the years to come",
+      "Mohamed is driven and has the ability to learn quickly and produce the result. He is focused under any circumstances and always willing to contribute to the success of the team. It was great to work with him. ",
   },
 ];
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: "Hanzla Tauqeer",
+  title: "Mohamed Aakibali",
   description: greetings.description,
-  author: "Hanzla Tauqeer",
+  author: "Mohamed Aakibali",
   image: "https://avatars.githubusercontent.com/u/59178380?v=4",
   url: "https://developer-portfolio-1hanzla100.vercel.app",
   keywords: [
-    "Hanzla",
-    "Hanzla Tauqeer",
-    "@1hanzla100",
-    "1hanzla100",
+    "Mohamed",
+    "Mohamed aakibali",
+    "@Aakib01",
+    "Aakib01",
     "Portfolio",
-    "Hanzla Portfolio ",
-    "Hanzla Tauqeer Portfolio",
+    "Mohamed Portfolio ",
+    "Mohamed Aakibali Portfolio",
   ],
 };

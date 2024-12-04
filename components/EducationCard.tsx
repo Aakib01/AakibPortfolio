@@ -3,7 +3,7 @@ import { Card, CardBody, Badge } from "reactstrap";
 import { EducationType } from "../types/sections";
 import Fade from "react-reveal/Fade";
 
-const EducationCard = ({ schoolName, subHeader, duration, desc, grade, descBullets }: EducationType) => {
+const EducationCard = ({ schoolName, subHeader, duration, desc, CGPA, descBullets }: EducationType) => {
   return (
     <Card className="shadow-lg--hover shadow mt-4">
       <CardBody>
@@ -14,9 +14,9 @@ const EducationCard = ({ schoolName, subHeader, duration, desc, grade, descBulle
             <Badge color="info" className="mr-1">
               {duration}
             </Badge>
-            {grade && (
+            {CGPA && (
               <Badge color="primary" className="mr-1">
-                {grade}
+                {CGPA}
               </Badge>
             )}
             <p className="description mt-3">{desc}</p>
