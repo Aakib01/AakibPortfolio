@@ -4,5 +4,5 @@ module.exports = {
     domains: ["avatars.githubusercontent.com"],
   },
   trailingSlash: true,
-  output: "standalone",
+  output: "export",
 };
